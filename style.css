@@ -1,0 +1,115 @@
+/* AUTUMN LOGIN THEME */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(
+        135deg,
+        #5C3A21,
+        #A65D35,
+        #D99A5B
+    );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+    background-color: #FFF3E0;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(40, 20, 10, 0.3);
+    text-align: center;
+    border: 2px solid #D9A066;
+}
+
+/* TITLE */
+.login-container h1 {
+    color: #713F25;
+    font-size: 38px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+/* DESCRIPTION */
+.login-container p {
+    color: #8B6347;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* FORM GROUP */
+.form-group {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #70452D;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* INPUT */
+.form-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid #C58B5B;
+    border-radius: 10px;
+    background-color: #FFFAF3;
+    color: #513321;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #A6532D;
+    box-shadow: 0 0 8px rgba(166, 83, 45, 0.25);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #A6532D;
+    color: #FFF3E0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #713F25;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(80, 40, 20, 0.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 22px;
+    }
+
+    .login-container h1 {
+        font-size: 32px;
+    }
+}
